@@ -1,5 +1,7 @@
 package fp.daw.examen;
 
+import java.util.Scanner;
+
 public class Ejercicio6 {
 
 	/* 
@@ -14,7 +16,28 @@ public class Ejercicio6 {
 	 */
 		
 	public static void main(String[] args) {
+		int d;
+		int menor=100000000;
+		int valor1=0;;
+		int valor2=0;;
+		d=(int)(Math.random()*400+100);
 		
+		int [] vector = new int[d];
+		
+		for(int i=0;i<vector.length;i++) {
+			vector[i]=(int)(Math.random()*1000000);
+		}
+		
+		for(int i=0;i<vector.length-1;i++) {
+			if(vector[i]-vector[i+1]<menor) {
+				menor=vector[i]-vector[i+1];
+				valor1=vector[i];
+				valor2=vector[i+1];
+			}
+		}
+		
+		
+		System.out.println("mínima diferencia: " + menor+"de estos valores " +valor1+"-" +valor2);
 
 	}
 

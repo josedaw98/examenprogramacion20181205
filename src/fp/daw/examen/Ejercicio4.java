@@ -12,7 +12,16 @@ public class Ejercicio4 {
 	 * Finalmente retornará el array.
 	 */
 	
-	public static ...
+	public static int[] arrayAleatorioOrdenado(int n) {
+		
+		int mayor=0;
+		
+		
+		
+		
+		return null;
+		
+	}
 	
 	/*
 	 * 0,25 puntos
@@ -22,7 +31,7 @@ public class Ejercicio4 {
 	 */
 	
 	public static void main(String[] args) {
-		
+		arrayAleatorioOrdenado(5);
 
 	}
 

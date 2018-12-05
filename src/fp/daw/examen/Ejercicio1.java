@@ -13,7 +13,17 @@ public class Ejercicio1 {
 	 * uso de variables booleanas.
 	 */
 	
-	public static ...
+	public static boolean contiene(String []vector, String cadena) {
+		
+		for(int i=0;i<vector.length;i++) {
+			
+		
+		}
+		
+		
+		return false;
+		
+	}
 	
 	/*
 	 * 0,25 puntos
@@ -23,8 +33,12 @@ public class Ejercicio1 {
 	 */
 	
 	public static void main(String[] args) {
+		String cadena="hola";
+		String [] vector= {"hola mundo"};
+			
 		
-
+		
+		contiene(vector,  cadena);
 	}
 
 }

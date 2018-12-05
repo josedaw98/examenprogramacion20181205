@@ -35,12 +35,22 @@ public class Ejercicio3 {
 		int j = 0;
 		for (int i=0; i<nums.length-1; i++)
 			if (nums[i] == 4 && nums[i+1] != 5) {
-				for (; !(nums[j] == 5 && (j == 0 || nums[j - 1] != 4)); j++);
-				nums[j] = nums[i + 1];
-				nums[i + 1] = 5;
+//				for (; !(nums[j] == 5 && (j == 0 || nums[j - 1] != 4)); j++);
+//				nums[j] = nums[i + 1];
+//				nums[i + 1] = 5;
+				while(j<nums.length) {
+					if(nums[j] == 5 && (j==0 || nums[j-1] !=4)) {
+						nums[j]= nums[i+1];
+						nums[i+1]=5;
+					}
+					j++;
+				}
 			}
+		
 		return nums;
 	}
+	
+	
 	
 	/*
 	 * 0,25 puntos
@@ -50,6 +60,14 @@ public class Ejercicio3 {
 	 */
 	
 	public static void main(String[] args) {
+		
+		int [] vector= {1,5,5,4,4,4,5};
+		
+		fix45(vector);
+		
+		for(int i=0;i<vector.length;i++) {
+			System.out.print(vector[i]);
+		}
 		
 
 	}
